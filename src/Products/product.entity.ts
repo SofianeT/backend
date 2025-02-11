@@ -13,4 +13,10 @@ export class Product {
 
   @Column({ nullable: true })
   description?: string;
+
+  @Column('int')
+  stock: number;
+
+  @Column({ nullable: true })
+  image?: string;
 }

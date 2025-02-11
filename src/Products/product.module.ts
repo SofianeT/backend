@@ -5,9 +5,9 @@ import { ProductController } from './product.controller';
 import { ProductService } from './product.service';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Product])], // Déclare l'entité Product pour TypeORM
-  controllers: [ProductController], // Ajoute le contrôleur
-  providers: [ProductService], // Ajoute le service
-  exports: [ProductService], // Exporte le service si nécessaire dans d'autres modules
+  imports: [TypeOrmModule.forFeature([Product])],
+  controllers: [ProductController],
+  providers: [ProductService],
+  exports: [ProductService],
 })
 export class ProductModule {}
